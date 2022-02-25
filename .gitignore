@@ -1,0 +1,7 @@
+printfTester/
+printfTester/*
+tests
+tests/*
+*.o
+*.a
+*.swp
