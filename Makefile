@@ -6,7 +6,7 @@
 #    By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/25 16:12:27 by drobert-          #+#    #+#              #
-#    Updated: 2022/02/27 21:10:16 by drobert-         ###   ########.fr        #
+#    Updated: 2022/02/27 21:11:19 by drobert-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,14 +68,16 @@ NAME = libftprintf.a
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@make -C libft
+	@make -C $(libft)
 	@cp $(LIBFT)/libft.a $(NAME)
 	@$(AR) -rc $(NAME) $(OBJS)
 
 clean:
+	make clean -C $(LIBFT)
 	@$(RM) $(OBJS)
 
 fclean: clean
+	make fclean -C $(LIBFT)
 	@$(RM) $(NAME)
 
 re: fclean all
