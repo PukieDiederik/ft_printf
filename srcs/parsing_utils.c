@@ -6,7 +6,7 @@
 /*   By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 17:36:10 by drobert-          #+#    #+#             */
-/*   Updated: 2022/02/25 17:36:11 by drobert-         ###   ########.fr       */
+/*   Updated: 2022/02/27 21:08:54 by drobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ OPTIONS: cspdiuxX
 
 int	parse_option(const char c, va_list list)
 {
-	// if (c == 'c')
-	// 	write(1, &c, 1);
+	if (c == 'c')
+		return (flag_c(va_arg(list, int)));
 	// if (c == 's');
 	// if (c == 'p');
 	if (c == 'd' || c == 'i')
@@ -40,6 +40,5 @@ int	parse_option(const char c, va_list list)
 	// if (c == 'x');
 	// if (c == 'X');
 	// if (c == '%');
-	// va_arg(list, int);
 	return (0);
 }

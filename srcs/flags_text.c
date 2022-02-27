@@ -6,8 +6,14 @@
 /*   By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 17:36:27 by drobert-          #+#    #+#             */
-/*   Updated: 2022/02/25 17:36:28 by drobert-         ###   ########.fr       */
+/*   Updated: 2022/02/27 21:08:26 by drobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	flag_c(int c)
+{
+	ft_putchar_fd((char)c, 1);
+	return (1);
+}
