@@ -6,7 +6,7 @@
 #    By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/25 16:12:27 by drobert-          #+#    #+#              #
-#    Updated: 2022/02/27 21:11:19 by drobert-         ###   ########.fr        #
+#    Updated: 2022/02/27 21:30:24 by drobert-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ HDRS = includes/
 
 OBJS = $(SRCS:.c=.o)
 
-LIBFT = libft/
+LIBFT = libft
 
 # Programs
 CC = cc
@@ -68,16 +68,16 @@ NAME = libftprintf.a
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@make -C $(libft)
+	make -C $(LIBFT)
 	@cp $(LIBFT)/libft.a $(NAME)
 	@$(AR) -rc $(NAME) $(OBJS)
 
 clean:
-	make clean -C $(LIBFT)
+	@make clean -C $(LIBFT)
 	@$(RM) $(OBJS)
 
 fclean: clean
-	make fclean -C $(LIBFT)
+	@make fclean -C $(LIBFT)
 	@$(RM) $(NAME)
 
 re: fclean all

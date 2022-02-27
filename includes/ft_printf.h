@@ -6,7 +6,7 @@
 /*   By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 14:38:38 by drobert-          #+#    #+#             */
-/*   Updated: 2022/02/27 21:08:34 by drobert-         ###   ########.fr       */
+/*   Updated: 2022/02/27 21:20:33 by drobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	parse_option(const char c, va_list list);
 
 // Conversion Functions
 int	flag_c(int c);
-int	flag_s(char c);
+int	flag_s(char *str);
 int	flag_p(char c);
 int	flag_di(int c);
 int	flag_u(int c);

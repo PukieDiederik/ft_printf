@@ -6,7 +6,7 @@
 /*   By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 17:36:10 by drobert-          #+#    #+#             */
-/*   Updated: 2022/02/27 21:08:54 by drobert-         ###   ########.fr       */
+/*   Updated: 2022/02/27 21:18:36 by drobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ int	parse_option(const char c, va_list list)
 {
 	if (c == 'c')
 		return (flag_c(va_arg(list, int)));
-	// if (c == 's');
+	if (c == 's')
+		return (flag_s(va_arg(list, char *)));
 	// if (c == 'p');
 	if (c == 'd' || c == 'i')
 		return (flag_di(va_arg(list, int)));
