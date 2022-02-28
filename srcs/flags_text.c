@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   flags_text.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: drobert- <drobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 17:36:27 by drobert-          #+#    #+#             */
-/*   Updated: 2022/02/27 21:35:57 by drobert-         ###   ########.fr       */
+/*   Updated: 2022/02/28 17:05:53 by drobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,10 @@ int	flag_s(char *str)
 	}
 	ft_putstr_fd(str, 1);
 	return (ft_strlen(str));
+}
+
+int	flag_percent(void)
+{
+	ft_putchar_fd('%', 1);
+	return (1);
 }
