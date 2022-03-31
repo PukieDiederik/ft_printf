@@ -6,7 +6,7 @@
 /*   By: drobert- <drobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 17:36:10 by drobert-          #+#    #+#             */
-/*   Updated: 2022/02/28 17:04:16 by drobert-         ###   ########.fr       */
+/*   Updated: 2022/02/28 17:37:48 by drobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,16 @@ OPTIONS: cspdiuxX
 • %x Prints a number in hexadecimal (base 16) lowercase format.
 • %X Prints a number in hexadecimal (base 16) uppercase format.
 • %% Prints a percent sign.
+
+• %+ always puts a + before a signed number conversion (only applies to d, i)
+•`% `puts a space before a positive signed conversion or an empty string
+	(only applies to d, i, s)
+• %# puts 0x before hex numbers (only applies to x, X)
+
+• %0 0 padded only applies to lef(d, i, u, x, X)
+• %- right padded with spaces till minimum width
+• %. puts 0x before hex numbers (only applies to x, X)
+
 */
 
 int	parse_option(const char c, va_list list)

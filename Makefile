@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: drobert- <drobert-@student.42lisboa.com    +#+  +:+       +#+         #
+#    By: drobert- <drobert-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/25 16:12:27 by drobert-          #+#    #+#              #
-#    Updated: 2022/02/27 21:30:24 by drobert-         ###   ########.fr        #
+#    Updated: 2022/02/28 17:11:07 by drobert-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,14 @@ _ICYAN		=	\x1b[46m
 _IWHITE		=	\x1b[47m
 
 # Files
-SRCS = $(wildcard srcs/*.c)
+SRCS =	srcs/flags_numbers.c\
+		srcs/flags_text.c\
+		srcs/ft_itoa_lx.c\
+		srcs/ft_itoa_u.c\
+		srcs/ft_itoa_x.c\
+		srcs/ft_make_x_uppercase.c\
+		srcs/ft_printf.c\
+		srcs/parsing_utils.c
 
 HDRS = includes/
 
